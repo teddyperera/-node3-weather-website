@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<title>Home</title>
+
+<head>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+    <div class="main-content">
+        {{>header}}
+
+        <p>Get your weather</p>
+        <div>
+            <form action="">
+                <input placeholder="Location">
+                <button>Search</button>
+            </form>
+
+            <div>
+                <p id='data' style="font-weight: bold;;"></p>
+                <p id='error'></p>
+            </div>
+        </div>
+
+    </div>
+
+    {{>footer}}
+    <script src="./js/app.js"></script>
+</body>
+
+</html>
