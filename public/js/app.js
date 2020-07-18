@@ -1,5 +1,3 @@
-console.log('clientside javascrip is loaded')
-
 const weatherForm = document.querySelector('form')
 const address = document.querySelector('input')
 const messageData = document.querySelector('#data')
