@@ -51,7 +51,7 @@ app.get('/weather', (req, res) => {
         geocode(req.query.location, ({ features }) => {
             weather(features[0].center[1], features[0].center[0], ({ data }) => {
                 return res.send({
-                    message: 'Lat and Long for ' + features[0].place_name + ' is Lat: ' + features[0].center[1] + ' Long: ' + features[0].center[0] + 'It is curruntly ' + data[0].temp + ' degrees out. There is a ' + data[0].precip + '% chance of rain.'
+                    message: 'Lat and Long for ' + features[0].place_name + ' is Lat: ' + features[0].center[1] + ' Long: ' + features[0].center[0] + '. Sunset is at ' + data[0].sunset + '. It is curruntly ' + data[0].temp + ' degrees out. There is a ' + data[0].precip + '% chance of rain.'
                 })
             })
         })
